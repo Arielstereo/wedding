@@ -1,12 +1,11 @@
 import { Great_Vibes } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const subtitle = Great_Vibes({
   subsets: ["latin"],
   weight: "400",
 });
-
-
 
 const Invitation = () => {
   return (
@@ -22,7 +21,7 @@ const Invitation = () => {
         alt="invitation-img"
         width={800}
         height={800}
-        className="w-full h-fit lg:w-5/6 xl:w-3/4 z-10 object-cover rounded-xl shadow-xl shadow-black"
+        className="w-full h-fit lg:w-5/6 xl:w-3/4 xl:h-2/3 z-10 object-cover rounded-xl shadow-xl shadow-black"
       />
       <div className="text-white text-base sm:text-2xl md:text-3xl z-50 absolute lg:left-1/4 xl:left-1/3 mt-32">
         <h2 className="md:text-5xl lg:text-6xl text-center mb-4 md:mb-6">
@@ -34,9 +33,9 @@ const Invitation = () => {
           <p>Estamos muy emocionados de compartir esta noche contigo!</p>
           <p>
             Por favor, confirma tu asistencia en el siguiente{" "}
-            <a href="" className="underline underline-offset-2 text-yellow-500">
+            <Link href="/confirm" className="underline underline-offset-2 text-yellow-500">
               link
-            </a>
+            </Link>
             .
           </p>
         </div>

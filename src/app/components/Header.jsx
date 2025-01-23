@@ -15,7 +15,7 @@ const subtitle = Great_Vibes({
 const Header = () => {
   return (
     <header className="relative w-full h-screen">
-      <div className={`${title.className} antialiased absolute top-1/4 left-14 md:left-32 z-20 flex flex-col gap-1 text-yellow-500 text-6xl md:text-8xl text-center`}>
+      <div className={`${title.className} antialiased absolute top-1/4 left-12 md:left-32 z-20 flex flex-col gap-1 text-yellow-500 text-6xl md:text-8xl text-center`}>
         <span className="animate__animated animate__backInDown">Romeo</span>
         <span className="animate__animated animate__backInLeft">&</span>
         <span className="animate__animated animate__backInRight">Julieta</span>
