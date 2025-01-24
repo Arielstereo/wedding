@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import HistorySection from "./components/HistorySection"
 import Invitation from "./components/Invitation"
+import UpButton from "./components/UpButton"
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <HistorySection />
       <Invitation />
+      <UpButton />
     </main>
   )
 }

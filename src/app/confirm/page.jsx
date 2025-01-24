@@ -1,5 +1,6 @@
 import { Great_Vibes } from 'next/font/google';
 import Form from '../components/Form'
+import BackButton from '../components/BackButton';
 
 
 const subtitle = Great_Vibes({
@@ -10,7 +11,8 @@ const subtitle = Great_Vibes({
 const Confirm = () => {
   return (
     <div className='flex flex-col gap-8 items-center justify-center h-screen'>
-      <h1 className={`${subtitle.className} text-center text-yellow-600 text-4xl lg:text-7xl font-semibold `}>Completa el formulario para confirmar tu asistencia!</h1>
+      <BackButton />
+      <h1 className={`${subtitle.className} text-center text-yellow-600 text-4xl lg:text-7xl`}>Completa el formulario para confirmar tu asistencia!</h1>
       <Form />
     </div>
   )

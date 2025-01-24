@@ -1,7 +1,5 @@
 import { Kanit} from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import NavMobile from "./components/NavMobile";
 
 const font = Kanit({
   subsets: ["latin"],
@@ -18,8 +16,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${font.className} antialiased relative`}>
-        <Navbar />
-        <NavMobile />
         {children}
       </body>
     </html>

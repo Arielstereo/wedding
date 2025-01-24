@@ -40,7 +40,7 @@ const Form = () => {
       <Toaster />
       <form
         action={submitAction}
-        className="flex flex-col w-5/6 md:w-96 mx-auto gap-6"
+        className="flex flex-col w-fit md:w-96 mx-auto gap-6"
       >
         <input
           className="p-2 md:p-3 border border-yellow-600 rounded-lg"
