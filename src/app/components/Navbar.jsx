@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link href="#invitation">Invitación</Link>
         </li>
         <li className="text-yellow-400 hover:text-white text-lg md:text-2xl">
-          <Link href="#">Galería</Link>
+          <Link href="/gallery">Galería</Link>
         </li>
       </ul>
     </nav>

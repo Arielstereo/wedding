@@ -70,7 +70,7 @@ const Form = () => {
         <button
           type="submit"
           disabled={isPending}
-          className="group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 text-lg text-yellow-500 font-semibold"
+          className="group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 text-2xl text-yellow-500 hover:text-yellow-400 font-semibold"
         >
           <span>{isPending ? "Cargando.. " : "Confirmar"}</span>
           <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">

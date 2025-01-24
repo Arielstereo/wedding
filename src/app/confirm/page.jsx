@@ -1,18 +1,11 @@
-import { Great_Vibes } from 'next/font/google';
 import Form from '../components/Form'
 import BackButton from '../components/BackButton';
-
-
-const subtitle = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const Confirm = () => {
   return (
     <div className='flex flex-col gap-8 items-center justify-center h-screen'>
       <BackButton />
-      <h1 className={`${subtitle.className} text-center text-yellow-600 text-4xl lg:text-7xl`}>Completa el formulario para confirmar tu asistencia!</h1>
+      <h1 className={"text-center text-slate-900 font-bold text-2xl lg:text-4xl"}>Completa el formulario para confirmar tu asistencia</h1>
       <Form />
     </div>
   )

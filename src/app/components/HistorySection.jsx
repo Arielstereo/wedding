@@ -10,8 +10,8 @@ const subtitle = Great_Vibes({
 const HistorySection = () => {
   return (
     <section id="history" className={`${subtitle.className} h-screen flex flex-col justify-center items-center`}>
-      <h2 className="text-6xl md:text-8xl text-yellow-600 text-center">Nuestra historia</h2>
-      <h2 className="block text-6xl md:text-8xl text-yellow-600 text-center mb-16">de amor...</h2>
+      <h2 className="text-6xl md:text-8xl text-slate-900 text-center">Nuestra historia</h2>
+      <h2 className="block text-6xl md:text-8xl text-slate-900 text-center mb-16">de amor...</h2>
       <Carrousel />
     </section>
   )
