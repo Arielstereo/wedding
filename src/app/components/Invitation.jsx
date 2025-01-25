@@ -1,6 +1,11 @@
+"use client";
+
 import { Great_Vibes } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const subtitle = Great_Vibes({
   subsets: ["latin"],
@@ -8,8 +13,14 @@ const subtitle = Great_Vibes({
 });
 
 const Invitation = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
+      data-aos="zoom-in-up"
+      data-aos-duration="2000"
       id="invitation"
       className={`${subtitle.className} antialiased h-screen flex flex-col relative justify-center items-center`}
     >
@@ -19,7 +30,7 @@ const Invitation = () => {
           alt="flower"
           width={800}
           height={800}
-          className="w-64 md:w-96 object-cover absolute top-32 md:top-0 left-0 right-0 mx-auto"
+          className="w-64 md:w-96 object-cover absolute top-32 md:top-0 left-0 right-0 mx-auto mt-32"
         />
         <div className="text-slate-900 absolute top-56 md:top-32 left-0 right-0 mx-1 z-10">
           <h2 className="text-4xl md:text-6xl lg:text-7xl text-center mb-6">

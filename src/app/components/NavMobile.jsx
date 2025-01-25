@@ -20,7 +20,7 @@ const NavMobile = () => {
           </Link>
         </li>
         <li className="border border-gray-500 bg-black shadow-sm shadow-yellow-400 px-3 pt-2 pb-1 rounded-xl transform transition-transform active:scale-110">
-          <Link href="#">
+          <Link href="/gallery">  
             <span className="icon-[zondicons--camera] text-white text-2xl"></span>
           </Link>
         </li>

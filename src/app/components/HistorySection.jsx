@@ -1,20 +1,37 @@
+"use client";
+
 import { Great_Vibes } from "next/font/google";
-import Carrousel from "./Carrousel"
+import Carrousel from "./Carrousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const subtitle = Great_Vibes({
   subsets: ["latin"],
   weight: "400",
 });
 
-
 const HistorySection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section id="history" className={`${subtitle.className} h-screen flex flex-col justify-center items-center`}>
-      <h2 className="text-6xl md:text-8xl text-slate-900 text-center">Nuestra historia</h2>
-      <h2 className="block text-6xl md:text-8xl text-slate-900 text-center mb-16">de amor...</h2>
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      id="history"
+      className={`${subtitle.className} h-screen flex flex-col items-center justify-center `}
+    >
+      <h2 className="text-6xl md:text-8xl text-slate-900 text-center mt-32 ">
+        Nuestra historia
+      </h2>
+      <h2 className="block text-6xl md:text-8xl text-slate-900 text-center mb-16">
+        de amor...
+      </h2>
       <Carrousel />
     </section>
-  )
-}
+  );
+};
 
-export default HistorySection
+export default HistorySection;

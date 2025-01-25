@@ -57,7 +57,7 @@ const Gallery = () => {
               className="rounded-lg shadow-lg w-[320px] md:w-[1200px] h-[500px] md:h-[600px] object-cover"
             />
             <button
-              className="absolute top-2 right-2 text-yellow-500 text-xl hover:text-2xl font-black w-12 h-12 bg-slate-800 rounded-full hover:bg-slate-700 flex items-center justify-center transform hover:scale-105 transition-transform"
+              className="absolute top-2 right-2 text-white text-xl hover:text-2xl font-black w-12 h-12 bg-slate-800 rounded-full hover:bg-slate-700 flex items-center justify-center transform hover:scale-105 transition-transform"
               onClick={closeModal}
             >
               ✕
