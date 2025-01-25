@@ -11,7 +11,7 @@ const subtitle = Great_Vibes({
   weight: "400",
 });
 
-const HistorySection = () => {
+const History = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -23,7 +23,7 @@ const HistorySection = () => {
       id="history"
       className={`${subtitle.className} h-screen flex flex-col items-center justify-center `}
     >
-      <h2 className="text-6xl md:text-8xl text-slate-900 text-center mt-32 ">
+      <h2 className="text-6xl md:text-8xl text-slate-900 text-center mt-48 ">
         Nuestra historia
       </h2>
       <h2 className="block text-6xl md:text-8xl text-slate-900 text-center mb-16">
@@ -34,4 +34,4 @@ const HistorySection = () => {
   );
 };
 
-export default HistorySection;
+export default History;

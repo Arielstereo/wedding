@@ -1,9 +1,10 @@
 import { Suspense } from "react"
-import Header from "./components/Header"
-import HistorySection from "./components/HistorySection"
 import Invitation from "./components/Invitation"
 import UpButton from "./components/UpButton"
+import History from "./components/History"
+import Header from "./components/Header"
 import Loading from "./loading"
+import Place from "./components/Place"
 
 
 const Home = () => {
@@ -11,8 +12,9 @@ const Home = () => {
     <main>
       <Suspense fallback={<Loading />}>
       <Header />
-      <HistorySection />
+      <History />
       <Invitation />
+      <Place />
       <UpButton />
       </Suspense>
     </main>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BackButton from "../components/BackButton";
+import Image from "next/image";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -37,10 +38,12 @@ const Gallery = () => {
       </span>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-3/4">
         {images.map((src) => (
-          <img
+          <Image
             key={src}
             src={src}
             alt={`Image ${src}`}
+            width={600}
+            height={600}
             className="rounded-lg shadow-lg object-cover h-full cursor-pointer transform hover:scale-105 transition-transform"
             onClick={() => handleImageClick(src)}
             title="Haz click para ampliar"
@@ -51,9 +54,11 @@ const Gallery = () => {
       {selectedImage && (
         <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-20 z-50">
           <div className="relative">
-            <img
+            <Image
               src={selectedImage}
               alt="Selected"
+              width={600}
+              height={600}
               className="rounded-lg shadow-lg w-[320px] md:w-[1200px] h-[500px] md:h-[600px] object-cover"
             />
             <button
