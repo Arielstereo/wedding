@@ -21,7 +21,7 @@ const History = () => {
       data-aos="zoom-in"
       data-aos-duration="2000"
       id="history"
-      className={`${subtitle.className} h-screen flex flex-col items-center justify-center `}
+      className={`${subtitle.className} h-screen flex flex-col items-center justify-center pb-24 scroll-mt-32 bg-white `}
     >
       <h2 className="text-6xl md:text-8xl text-slate-900 text-center mt-48 ">
         Nuestra historia

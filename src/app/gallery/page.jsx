@@ -30,13 +30,10 @@ const Gallery = () => {
   return (
     <div className="flex flex-col items-center mt-32 h-screen">
       <BackButton />
-      <h2 className="text-center text-slate-900 text-4xl font-bold md:text-5xl mb-4">
+      <h2 className="text-center text-slate-900 text-4xl md:text-5xl mb-8">
         Galeria de fotos
       </h2>
-      <span className="text-yellow-600 text-base font-semibold block mb-8 w-fit px-4 text-center">
-        Gracias por venir y compartir con nosotros estos momentos inolvidables.
-      </span>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-3/4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-3/4">
         {images.map((src) => (
           <Image
             key={src}
@@ -44,13 +41,15 @@ const Gallery = () => {
             alt={`Image ${src}`}
             width={600}
             height={600}
-            className="rounded-lg shadow-lg object-cover h-full cursor-pointer transform hover:scale-105 transition-transform"
+            className="rounded-lg shadow-lg object-cover h-full md:h-96 cursor-pointer transform hover:scale-105 transition-transform"
             onClick={() => handleImageClick(src)}
             title="Haz click para ampliar"
           />
         ))}
       </div>
-
+      <span className="text-yellow-600 text-lg block mb-8 w-fit px-4 text-center py-16">
+        Gracias por venir y compartir con nosotros estos momentos inolvidables.
+      </span>
       {selectedImage && (
         <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-20 z-50">
           <div className="relative">

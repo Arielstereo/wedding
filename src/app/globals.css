@@ -7,15 +7,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("/background.webp");
+  /* background-image: url("/background.webp");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
   scroll-behavior: smooth;
 }
 
 .header-img {
-  mask-image: linear-gradient(black 60%, transparent 100%);
+  mask-image: linear-gradient(black 75%, transparent 100%);
 }
 
 .swiper {

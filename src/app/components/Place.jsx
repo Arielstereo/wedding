@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Maps from "./Maps";
 import MapsResponsive from "./MapsResponsive";
 
@@ -37,20 +38,26 @@ const Place = () => {
             La fiesta se llevará a caba el día 25-05-25 a las 22hs.
           </p>
           <div className="hidden md:flex gap-4 mt-6">
-            <img
-              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg"
+            <Image
+              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg cursor-pointer transform hover:scale-105 transition-transform"
               src="/janos.jpeg"
               alt="janos"
+              height={600}
+              width={600}
             />
-            <img
-              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg"
+            <Image
+              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg cursor-pointer transform hover:scale-105 transition-transform"
               src="/janos3.jpg"
               alt="janos"
+              height={600}
+              width={600}
             />
-            <img
-              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg"
+            <Image
+              className="w-1/2 md:w-1/4 shadow-lg shadow-black rounded-lg cursor-pointer transform hover:scale-105 transition-transform"
               src="/janos2.jpeg"
               alt="janos"
+              height={600}
+              width={600}
             />
           </div>
         </div>
