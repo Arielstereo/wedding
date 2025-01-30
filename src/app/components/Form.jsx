@@ -2,6 +2,7 @@
 
 import { useActionState, useState } from "react";
 import { Toaster, toast } from "sonner";
+import confetti from 'canvas-confetti'
 
 const Form = () => {
   const [data, setData] = useState(null);
@@ -30,6 +31,11 @@ const Form = () => {
 
     setData({ username, lastName, email, message }); 
     toast.success(`Gracias ${username} por confirmar tu presencia!`);
+    confetti({
+      particleCount: 3000,
+      startVelocity: 50,
+      spread: 360
+    })
     
   };
   const [error, submitAction, isPending] = useActionState(send);

@@ -5,6 +5,7 @@ import History from "./components/History"
 import Header from "./components/Header"
 import Loading from "./loading"
 import Place from "./components/Place"
+import Footer from "./components/Footer"
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Invitation />
       <Place />
       <UpButton />
+      <Footer />
       </Suspense>
     </main>
   )
